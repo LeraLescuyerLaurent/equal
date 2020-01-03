@@ -3,9 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <link rel="stylesheet" href="dist/css/style.css">
+        {% endblock %}
     </head>
     <body>
+<header class="header">
+
+    <a href="#" class="header__icon"></a>
+    <a href="#" class="header__logo">logo</a>
+        <nav class="menu">
+            <a href="#"> Item 1</a>
+            <a href="#"> Item 2</a>
+            <a href="#"> Item 3</a>
+            <a href="#"> Item 4</a>
+            <a href="#"> Item 5</a>
+
+        </nav>
+
+    </header>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
